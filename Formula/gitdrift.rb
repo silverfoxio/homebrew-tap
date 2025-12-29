@@ -25,7 +25,8 @@ class GitDrift < Formula
   end
 
   def install
-    bin.install "gitdrift"
+    # Binary is in gitdrift-v{version}-{target}/ directory after extraction
+    bin.install Dir["gitdrift-v*-*/gitdrift"].first => "gitdrift"
   end
 
   test do
