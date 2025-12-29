@@ -1,4 +1,4 @@
-class GitDrift < Formula
+class Gitdrift < Formula
   desc "CLI tool to detect missing Git commits across branches"
   homepage "https://github.com/silverfoxio/gitdrift"
   version "0.1.0"
